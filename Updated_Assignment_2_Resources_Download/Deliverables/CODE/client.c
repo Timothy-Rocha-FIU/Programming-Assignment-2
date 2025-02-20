@@ -12,7 +12,7 @@
 void* thread_manager(void* arg)
 {
     mqd_t mq_received;
-    char buffer[MAX_MSG_SIZE]; //Store the messages. Storage designated to max size var.
+    char buffer[MAX_MSG_SIZE]; //Store the messages. Storage designated to max size var
 
     mq_received = mq_open(RECEIVE_QUEUE, O_RDONLY);
     if (mq_received == (mqd_t)-1) {
